@@ -1,3 +1,4 @@
+"""RETRIEVING DATA"""
 import psycopg2
 
 con = psycopg2.connect(database="python_connect", user="postgres", password="rajneesh", host="127.0.0.1", port="5432")
