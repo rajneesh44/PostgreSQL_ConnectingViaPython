@@ -4,7 +4,12 @@ con = psycopg2.connect(database="python_connect", user="postgres", password="raj
 
 print("Database opened Successfully")
 
+#creating a cursor to execute the commands
+
 cur = con.cursor()
+
+#creating a table
+
 cur.execute('''CREATE TABLE STUDENT
 				(ADMISSION INT PRIMARY KEY NOT NULL,
 				 NAME TEXT NOT NULL,
@@ -13,5 +18,6 @@ cur.execute('''CREATE TABLE STUDENT
 				 DEPARTMENT CHAR(50));''')
 
 print("Table created Successfully")
+
 con.commit()
 con.close()
