@@ -1,4 +1,4 @@
-#PostgreSQL_ConnectingViaPython
+# PostgreSQL_ConnectingViaPython
 
 We  will be creating a PostgreSQL database and connecting and accessing it using python.
 
