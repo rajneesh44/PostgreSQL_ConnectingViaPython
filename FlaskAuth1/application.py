@@ -20,10 +20,11 @@ def index():
         username = reg_form.username.data
         password = reg_form.password.data
 
-        #check username data
-        user_object = User.query.filter_by(username=username).first()
-        if user_object:
-            return "Someone else has taken this username"
+    #added the username validator in wtform.py file
+        # #check username data
+        # user_object = User.query.filter_by(username=username).first()
+        # if user_object:
+        #     return "Someone else has taken this username"
 
         user = User(username=username, password=password)
         db.session.add(user)
